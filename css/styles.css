@@ -1,15 +1,85 @@
 /* Your Website Styles */
 body {
-	background: #eee;
+	background: #00010F;
+	background: url("../img/BG2x.png") repeat;
 }
 
 
 div {
-	margin-top: -60px;	x 
+	margin-top: -60px; 
 }
 
+/****************
+HEADER
+****************/
+
+.header {
+	background-color: #0082FF;
+	border-right: 10px solid #000E96;
+	border-bottom: 10px solid #000E96;
+	background: url('../img/BGTri.png');
+	background-size: 100%;
+}
+
+h1 {
+	margin-top: 60px;
+	margin-left: 10px;
+	font-family: 'Audiowide', sans-serif;
+	font-size: 3em;
+	color: #00010F;
+}
+
+h2 {
+	margin-left: 10px;
+	font-family: 'Audiowide', sans-serif;
+	font-size: 1.25em;
+	color: #00010F;
+}
+
+/****************
+RESUME
+****************/
+
+h3 {
+	color: #00010F;
+	border-bottom: 2px solid #0082FF;
+	font-family: 'Laila', sans-serif;
+}
+
+.resume p {
+	text-align: right;
+	color: #00010F;
+	font-family: 'Laila', sans-serif;
+}
+
+img[src="img/CCULogo.png"] {
+	float: left;
+	max-width: 35%;
+	margin: 15px 10px;
+}
+
+img[src="img/EWULogo.png"] {
+	float: left;
+	max-width: 25%;
+	margin: 15px 10px;
+}
 
 /* Show Grid */
-.showgrid {
+/*.showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
+}*/
+
+/****************
+COLOR PALETTE REF
+
+Navy: #00010F;
+Dark Mint: #00CB73;
+True Blue: #0082FF;
+Light Seafoam Green: #A8F8FF;
+Icy Yellow: #F1FF7A;
+Dark Blue: #000E96;
+
+****************/
+.clear {
+  clear: both;
 }
