@@ -46,22 +46,38 @@ h3 {
 	font-family: 'Laila', sans-serif;
 }
 
+h4 {
+	color: #000E96;
+	font-family: 'Laila', sans-serif;
+	text-align: center;
+}
+
 .resume p {
-	text-align: right;
+	text-align: center;
 	color: #00010F;
 	font-family: 'Laila', sans-serif;
+	line-height: .95em;
+}
+
+#education p {
+	text-align: right;
 }
 
 img[src="img/CCULogo.png"] {
 	float: left;
 	max-width: 35%;
-	margin: 15px 10px;
+	margin: 15px 10px 10px 10px;
 }
 
 img[src="img/EWULogo.png"] {
 	float: left;
 	max-width: 25%;
-	margin: 15px 10px;
+	margin: 10px 10px;
+}
+
+#contact p {
+	text-align: center;
+	font-size: .75em;
 }
 
 /* Show Grid */
