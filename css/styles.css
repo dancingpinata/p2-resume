@@ -15,9 +15,9 @@ HEADER
 
 .header {
 	background-color: #0082FF;
-	border-right: 10px solid #000E96;
-	border-bottom: 10px solid #000E96;
-	background: url('../img/BGTri.png');
+	border-right: 10px solid #3C0678;
+	border-bottom: 10px solid #3C0678;
+	background: url('../img/BGBlue.png');
 	background-size: 100%;
 }
 
@@ -27,6 +27,7 @@ h1 {
 	font-family: 'Audiowide', sans-serif;
 	font-size: 3em;
 	color: #00010F;
+	background: ;
 }
 
 h2 {
@@ -41,38 +42,73 @@ RESUME
 ****************/
 
 h3 {
-	color: #00010F;
-	border-bottom: 2px solid #0082FF;
+	color: #F1FF7A;
 	font-family: 'Laila', sans-serif;
+	text-align: center;
+	font-size: 1.25em;
 }
 
 h4 {
-	color: #000E96;
+	color: #D4D4D4;
 	font-family: 'Laila', sans-serif;
 	text-align: center;
+	font-size: 1.15em;
 }
 
 .resume p {
 	text-align: center;
-	color: #00010F;
+	color: #D4D4D4;
 	font-family: 'Laila', sans-serif;
 	line-height: .95em;
 }
 
-#education p {
-	text-align: right;
+#education {
+	background: linear-gradient(to bottom, rgba(0, 1, 15, 1),  rgba(0, 1, 15, .5));
+	/*background: #00010F;*/
+	margin-top: 50px;
+}
+
+#education {
+	text-align: center;
+}
+
+#education .CCU {
+}
+
+#education .EWU {
 }
 
 img[src="img/CCULogo.png"] {
-	float: left;
-	max-width: 35%;
-	margin: 15px 10px 10px 10px;
+	max-width: 25%;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 60px 10px 10px 15px;
 }
 
 img[src="img/EWULogo.png"] {
-	float: left;
-	max-width: 25%;
-	margin: 10px 10px;
+	max-width: 15%;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 55px 10px 10px 15px;
+}
+
+#Work {
+	background: linear-gradient(to bottom, rgba(0, 1, 15, 1),  rgba(0, 1, 15, .5));
+	/*background: #00010F;*/
+}
+
+#Skills {
+	background: linear-gradient(to bottom, rgba(0, 1, 15, 1),  rgba(0, 1, 15, .5));
+	/*background: #00010F;*/
+}
+
+#Skills p[\10006] {
+	color: #3C0678;
+}
+
+#contact {
+	border-top: solid 3px #0076E8;
+	background: linear-gradient(to bottom, rgba(0, 1, 15, 1),  rgba(0, 1, 15, .5));
 }
 
 #contact p {
@@ -80,10 +116,75 @@ img[src="img/EWULogo.png"] {
 	font-size: .75em;
 }
 
+/****************
+POP-OUT TABS
+****************/
+.item {
+	border-top: solid 3px #0076E8;
+	margin-bottom: 2em;
+  	color: #F1FF7A;
+}
+
+.item h3 {
+	/*background: #00010F;*/
+}
+
+.item .content {
+	clear: both;
+	overflow: hidden;
+	max-height: 0;
+	transition: 0.5s ease;
+	padding-top: 10px;
+}
+
+.item input[type=checkbox] {
+  	display: none;
+}
+
+.item input[type=checkbox] ~ label {
+  	display: block;
+  	float: right;
+  	width: 2.5em;
+  	height: 2.5em;
+  	background: #0076E8;
+  	color: #fff;
+  	border-radius: 0  0 10% 10%;
+  	text-align: center;
+  	line-height: 2;
+  	font-weight: bold;
+  	cursor: pointer;
+}
+
+.item input[type=checkbox] ~ label:hover {
+	background: #3C0678;
+}
+
+.item input[type=checkbox]:checked ~ label {
+	background: #3C0678 ;
+}
+
+.item input[type=checkbox]:checked ~ h3 {
+	padding-bottom: 1em;
+}
+
+.item input[type=checkbox]:checked ~ .content {
+  	max-height: 200em;
+  	transition: 0.5s ease;
+}
+
+.item input[type=checkbox]:checked {
+	/*background: linear-gradient(to bottom, rgba(0, 1, 15, 1),  rgba(0, 1, 15, .5));*/
+}
+
 /* Show Grid */
 /*.showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
 }*/
+
+/*
+Checkbox using code based from: http://codepen.io/TheHeat/pen/cLlyt?editors=110;
+Layout inspired by: http://sourcre.am/p2-resume/ AND http://kevunger.github.io/p2-resume/;
+*/
 
 /****************
 COLOR PALETTE REF
@@ -94,6 +195,18 @@ True Blue: #0082FF;
 Light Seafoam Green: #A8F8FF;
 Icy Yellow: #F1FF7A;
 Dark Blue: #000E96;
+
+NEW COLOR PALETTE
+Blue-Black: #00010F;
+			(0, 1, 15)
+Clear Blue: #0076E8;
+			(0, 118, 232)
+Icy Yellow: #F1FF7A;
+			(241, 255, 122)
+Royal Purple: #3C0678;
+			(60, 6, 120)
+Off-White: #D4D4D4;
+			(212, 212, 212)
 
 ****************/
 .clear {
