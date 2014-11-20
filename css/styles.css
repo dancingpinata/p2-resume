@@ -31,7 +31,8 @@ h1 {
 }
 
 h2 {
-	margin-left: 10px;
+	float: right;
+	margin-right: 10px;
 	font-family: 'Audiowide', sans-serif;
 	font-size: 1.25em;
 	color: #00010F;
